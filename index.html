@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek Jadhav</title>
+    <link rel="stylesheet" href="/style.css">
+    <script defer src="/script.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="assets/my-logo.jpg" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <div id="navbar-items">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <!-- <li><a href="#services">Services</a></li> -->
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </div>
+                    <img src="assets/icons/close-icon.png" class="hamburger-icon close" onclick="closeMenu()">
+                </ul>
+                <img src="assets/icons/menu-icon.png" class="hamburger-icon menu" onclick="openMenu()">
+            </nav>
+            <div class="header-text">
+                <p>Hi, my name is</p>
+                <h1><span>Abhishek</span> Jadhav<br>I build things for the web.</h1>
+                <p>I’m currently looking for co-opopportunities. As a software engineer specializing in<br> creating
+                    exceptional user experiences. My passion lies in developing innovative and<br> accessible technology
+                    solutions.</p>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------About------------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="assets/abt.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>As an experienced web developer, I am passionate about creating robust and user-friendly web applications. Proficient in front-end technologies like HTML, CSS, JavaScript, and frameworks such as React and AEM.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>React</span><br></li>
+                            <li><span>JavaScript (ES6+)</span><br></li>
+                            <li><span>Adobe Experience Manager</span><br></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Tata Consultancy Services (05/2022 - Present)</span><br>AEM Frontend Developer<br>                       
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Bachelors of Engineering (07/2017 - 06/2021)</span><br>Sinhgad Institute of
+                                Technology and Science, Pune</li>
+                            <li><span>HSC (06/2015 - 06/2017)</span><br>S. N. R. Junior college Indapur dist - Pune</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------Services----------------- -->
+    <!-- <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <img src="assets/icons/graphic-design.png" class="icon">
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium minima a, cum voluptate quo
+                        neque quasi quam facilis reiciendis suscipit.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <img src="assets/icons/graphic-design.png" class="icon">
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium minima a, cum voluptate quo
+                        neque quasi quam facilis reiciendis suscipit.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <img src="assets/icons/graphic-design.png" class="icon">
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium minima a, cum voluptate quo
+                        neque quasi quam facilis reiciendis suscipit.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- ------------------------portfolio----------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="assets/myPhoto-copy.jpeg">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ab, necessitatibus fuga quo
+                            tempore quidem.</p>
+                        <a href="#"><img src="assets/icons/external-link.png"></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/myPhoto-copy.jpeg">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ab, necessitatibus fuga quo
+                            tempore quidem.</p>
+                        <a href="#"><img src="assets/icons/external-link.png"></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/myPhoto-copy.jpeg">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ab, necessitatibus fuga quo
+                            tempore quidem.</p>
+                        <a href="#"><img src="assets/icons/external-link.png"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- <a href="#" class="btn">See More</a> -->
+        </div>
+    </div>
+    <!-- ----------------------Contact------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><img src="assets/icons/email.png">aajadhav638@gmail.com</p>
+                    <p><span><img src="assets/icons/phone.png"></span>0-9112771252</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/abhijadhav638"><img src="assets/icons/github-icon.png"></a>
+                        <a href="https://www.linkedin.com/in/abhishek-jadhav-37971b193"><img src="assets/icons/linkedin.png"></a>
+                        <a href="https://x.com/"><img src="assets/icons/twitter.png"></a>
+                        <a href="https://www.instagram.com/ich_bin_abhi_j"><img src="assets/icons/instagram.png"></a>
+                        <a href="https://www.facebook.com/"><img src="assets/icons/facebook.png"></a>                        
+                    </div>
+                    <a href="assets/AbhishekJadhavResume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2 submit-btn">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Abhishek. Made with <img src="assets/icons/love-icon.png"> by Abhishek Jadhav</p>
+        </div>
+    </div>
+</body>
+
+</html>
