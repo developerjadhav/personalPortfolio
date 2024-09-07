@@ -3,6 +3,8 @@ let tabcontents = document.getElementsByClassName("tab-contents");
 
 let sidemenu = document.getElementById("sidemenu");
 
+let navLinks = document.getElementsByClassName("nav-links");
+
 function openTab(tabname) {
     for (tablink of tablinks) {
         tablink.classList.remove("active-link");
@@ -20,6 +22,14 @@ function openMenu() {
 
 function closeMenu() {
     sidemenu.style.right = "-200px";
+}
+
+// ---------------for closing nav links sidemenu on mobile device -------------
+
+for(i = 0; i < navLinks.length; i++){
+navLinks[i].addEventListener('click', () => {
+    sidemenu.style.right = "-200px";
+})
 }
 
 // ---------------For Contact Me Form submmition to google sheet----------------
