@@ -113,11 +113,11 @@
         <div class="container">
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
-                <div class="work">
-                    <img src="assets/primeBrief.png" class="work-bg">
-                    <div class="layer">
+                <div class="work" onmouseover="showDetails('primebrief-img','primebrief-layer')">
+                    <img src="assets/primeBrief.png" class="work-bg active-work-img" id="primebrief-img">
+                    <div class="layer active-work" id="primebrief-layer">
                         <h3>PrimeBrief</h3>
-                        <p>PrimeBrief is a news app which can be used to grab quick daily news bites. If you are
+                        <p class="project-details">PrimeBrief is a news app which can be used to grab quick daily news bites. If you are
                             interested in news, weather, politics and sports news, PrimeBrief is for you!</p>
                         <a href="https://primebrief.netlify.app/" target="_blank"><img
                                 src="assets/icons/external-link.png"></a>
@@ -126,11 +126,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="work">
-                    <img src="assets/textUtils-light.png" class="work-bg">
-                    <div class="layer">
+                <div class="work" onmouseover="showDetails('text-utils-img','text-utils-layer')">
+                    <img src="assets/textUtils-light.png" class="work-bg" id="text-utils-img">
+                    <div class="layer" id="text-utils-layer">
                         <h3>Text-Utils</h3>
-                        <p>TextUtils is a word counter and a character counting utility which can be used to manipulate
+                        <p class="project-details">TextUtils is a word counter and a character counting utility which can be used to manipulate
                             your text in the way you want. You can remove extra spaces, copy the manipulated text as
                             well as convert your text from Upppercase to Lowercase and Lowercase to Upppercase.</p>
                         <a href="https://developerjadhav.github.io/text-utils/" target="_blank"><img
@@ -141,11 +141,11 @@
                     </div>
                 </div>
 
-                <div class="work">
-                    <img src="assets/personal.png" class="work-bg">
-                    <div class="layer">
+                <div class="work" onmouseover="showDetails('portfolio-img','portfolio-layer')">
+                    <img src="assets/personal.png" class="work-bg" id="portfolio-img">
+                    <div class="layer" id="portfolio-layer">
                         <h3>Portfolio Website</h3>
-                        <p>I developed a Portfolio Website using JavaScript, showcasing my projects and skills. It is
+                        <p class="project-details">I developed a Portfolio Website using JavaScript, showcasing my projects and skills. It is
                             hosted on github pages for fast and reliable access and includes interactive features for an
                             engaging user experience.</p>
                         <a href="https://developerjadhav.github.io/personalPortfolio/"><img

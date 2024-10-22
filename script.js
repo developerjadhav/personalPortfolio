@@ -1,8 +1,6 @@
 let tablinks = document.getElementsByClassName("tab-links");
 let tabcontents = document.getElementsByClassName("tab-contents");
-
 let sidemenu = document.getElementById("sidemenu");
-
 let navLinks = document.getElementsByClassName("nav-links");
 
 function openTab(tabname) {
@@ -30,6 +28,22 @@ for(i = 0; i < navLinks.length; i++){
 navLinks[i].addEventListener('click', () => {
     sidemenu.style.right = "-200px";
 })
+}
+
+// ----------------for active work section-----------------------
+
+let workSectionsLayer = document.getElementsByClassName("layer");
+let workSectionsImg = document.getElementsByClassName("work-bg");
+
+function showDetails(img,layer) {
+    for (e of workSectionsImg) {
+        e.classList.remove("active-work-img");
+    }
+    for (e of workSectionsLayer) {
+        e.classList.remove("active-work");
+    }
+    document.getElementById(img).classList.add("active-work-img");
+    document.getElementById(layer).classList.add("active-work");
 }
 
 // ---------------For Contact Me Form submmition to google sheet----------------
