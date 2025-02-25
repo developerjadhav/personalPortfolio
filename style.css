@@ -341,9 +341,14 @@ nav ul li a:hover::after{
     flex-basis: 60%;
 }
 
-.contact-left p{
-    margin-top: 30px;
+.contact-left p {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
 }
+
 
 .contact-left p img{
     width: 20px;

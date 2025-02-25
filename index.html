@@ -3,9 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="shortcut icon" type="x-icon" href="assets/icons/aj-logo.jpg">
+    <link rel="icon" type="x-icon" href="assets/icons/aj-logo.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhishek Jadhav</title>
+    <title>Abhishek Jadhav | Web Developer & React Enthusiast</title>
+    <meta name="description"
+        content="Abhishek Jadhav – A passionate web developer specializing in React, JavaScript, and frontend technologies. Explore my projects and skills.">
+    <meta property="og:title" content="Abhishek Jadhav | Web Developer">
+    <meta property="og:description"
+        content="Check out my portfolio and projects on React, JavaScript, and web development.">
+    <meta property="og:image" content="assets/my-logo.jpg">
+    <meta property="og:url" content="https://developerjadhav.github.io/personalPortfolio/">
     <link rel="stylesheet" href="./style.css">
     <script defer src="./script.js"></script>
 </head>
@@ -13,15 +20,15 @@
 <body class="bg-dark">
     <div id="header">
         <div class="container">
-            <nav>
+            <nav aria-label="Main navigation">
                 <img src="assets/my-logo.jpg" alt="logo" class="logo">
                 <ul id="sidemenu" class="">
                     <div id="navbar-items">
                         <li><a href="#header" class="nav-links">Home</a></li>
                         <li><a href="#about" class="nav-links">About</a></li>
                         <!-- <li><a href="#services" class="nav-links">Services</a></li> -->
-                        <li><a href="#portfolio" class="nav-links">Portfolio</a></li>
-                        <li><a href="#contact" class="nav-links">Contact</a></li>
+                        <li><a href="#portfolio" class="nav-links">Projects</a></li>
+                        <li><a href="#contact" class="nav-links">Contact Me</a></li>
                     </div>
                     <img src="assets/icons/close-icon.png" class="hamburger-icon close" onclick="closeMenu()">
                 </ul>
@@ -114,11 +121,28 @@
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
 
+                <div class="work" onmouseover="showDetails('investmate-img','investmate-layer')">
+                    <img src="assets/investmate-img.png" class="work-bg" id="investmate-img" alt="InvestMate project preview">
+                    <div class="layer active-work" id="investmate-layer">
+                        <h3>InvestMate – Investment Calculator</h3>
+                        <p class="project-details">InvestMate helps you calculate and track your investments
+                            effortlessly. Let's calculate returns and make smarter financial decisions with ease!</p>
+                        <a href="https://developerjadhav-investmate.netlify.app/"><img
+                                src="assets/icons/external-link.png"></a>
+                        <div class="skills">
+                            <p>React JS &nbsp;&nbsp; JavaScript &nbsp;&nbsp; CSS</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
                 <div class="work" onmouseover="showDetails('tic-tac-toe-img','tic-tac-toe-layer')">
                     <img src="assets/tic-tac-toe-img.jpeg" class="work-bg" id="tic-tac-toe-img">
                     <div class="layer" id="tic-tac-toe-layer">
                         <h3>React Tic-Tac-Toe Game</h3>
-                        <p class="project-details">Experience the joy of Tic Tac Toe! Play online for free and enjoy this timeless game with easy controls and endless entertainment.</p>
+                        <p class="project-details">Experience the joy of Tic Tac Toe! Play online for free and enjoy
+                            this timeless game with easy controls and endless entertainment.</p>
                         <a href="https://developerjadhav-tic-tac-toe-game.netlify.app/"><img
                                 src="assets/icons/external-link.png"></a>
                         <div class="skills">
@@ -129,9 +153,10 @@
 
                 <div class="work" onmouseover="showDetails('primebrief-img','primebrief-layer')">
                     <img src="assets/primeBrief.png" class="work-bg active-work-img" id="primebrief-img">
-                    <div class="layer active-work" id="primebrief-layer">
+                    <div class="layer" id="primebrief-layer">
                         <h3>PrimeBrief</h3>
-                        <p class="project-details">PrimeBrief is a news app which can be used to grab quick daily news bites. If you are
+                        <p class="project-details">PrimeBrief is a news app which can be used to grab quick daily news
+                            bites. If you are
                             interested in news, weather, politics and sports news, PrimeBrief is for you!</p>
                         <a href="https://primebrief.netlify.app/" target="_blank"><img
                                 src="assets/icons/external-link.png"></a>
@@ -140,11 +165,13 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="work" onmouseover="showDetails('text-utils-img','text-utils-layer')">
                     <img src="assets/textUtils-light.png" class="work-bg" id="text-utils-img">
                     <div class="layer" id="text-utils-layer">
                         <h3>Text-Utils</h3>
-                        <p class="project-details">TextUtils is a word counter and a character counting utility which can be used to manipulate
+                        <p class="project-details">TextUtils is a word counter and a character counting utility which
+                            can be used to manipulate
                             your text in the way you want. You can remove extra spaces, copy the manipulated text as
                             well as convert your text from Upppercase to Lowercase and Lowercase to Upppercase.</p>
                         <a href="https://developerjadhav.github.io/text-utils/" target="_blank"><img
@@ -159,7 +186,8 @@
                     <img src="assets/personal.png" class="work-bg" id="portfolio-img">
                     <div class="layer" id="portfolio-layer">
                         <h3>Portfolio Website</h3>
-                        <p class="project-details">I developed a Portfolio Website using JavaScript, showcasing my projects and skills. It is
+                        <p class="project-details">I developed a Portfolio Website using JavaScript, showcasing my
+                            projects and skills. It is
                             hosted on github pages for fast and reliable access and includes interactive features for an
                             engaging user experience.</p>
                         <a href="https://developerjadhav.github.io/personalPortfolio/"><img
