@@ -45,22 +45,3 @@ function showDetails(img,layer) {
     document.getElementById(img).classList.add("active-work-img");
     document.getElementById(layer).classList.add("active-work");
 }
-
-// ----------- For Contact Me Form submmition to google sheet --------------
-
-const scriptURL = 'https://script.google.com/macros/s/AKfycbzpyMEJDNWFGS7EW0fldjG-uiNz94-rL4p3FVRKBmRuGcKKmvCP0FUo9zKAHHq02vk/exec'
-const form = document.forms['submit-to-google-sheet'];
-const msg = document.getElementById("msg");
-
-form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-        .then(response => {
-            msg.innerHTML = "Message sent successfully";
-            setTimeout(() => {
-                msg.innerHTML = "";
-            },500);
-            form.reset();
-        })
-        .catch(error => console.error('Error!', error.message))
-})
