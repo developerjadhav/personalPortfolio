@@ -22,7 +22,7 @@ function closeMenu() {
     sidemenu.style.right = "-200px";
 }
 
-// ---------------for closing nav links sidemenu on mobile device -------------
+// ---------- for closing nav links sidemenu on mobile device -------------
 
 for(i = 0; i < navLinks.length; i++){
 navLinks[i].addEventListener('click', () => {
@@ -30,7 +30,7 @@ navLinks[i].addEventListener('click', () => {
 })
 }
 
-// ----------------for active work section-----------------------
+// ---------------- for active work section ----------------------
 
 let workSectionsLayer = document.getElementsByClassName("layer");
 let workSectionsImg = document.getElementsByClassName("work-bg");
@@ -46,7 +46,7 @@ function showDetails(img,layer) {
     document.getElementById(layer).classList.add("active-work");
 }
 
-// ---------------For Contact Me Form submmition to google sheet----------------
+// ----------- For Contact Me Form submmition to google sheet --------------
 
 const scriptURL = 'https://script.google.com/macros/s/AKfycbzpyMEJDNWFGS7EW0fldjG-uiNz94-rL4p3FVRKBmRuGcKKmvCP0FUo9zKAHHq02vk/exec'
 const form = document.forms['submit-to-google-sheet'];
